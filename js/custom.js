@@ -49,7 +49,7 @@
 			} 
 		}); 
 		$('#back-to-top').click(function(){ 
-			$("html, body").animate({ scrollTop: 0 }, 600); 
+			window.location.href = "https://wa.me/918850453196";
 			return false; 
 		}); 
 	});
