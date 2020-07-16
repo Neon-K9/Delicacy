@@ -572,8 +572,8 @@ button:focus{
 
 .contact-imfo-box{
 	background: #8e0e0e;
-	padding: 30px 0;
-	border-radius: 100px;
+	padding: 20px 0;
+	border-radius: 30px;
 }
 
 .overflow-hidden {
@@ -1345,21 +1345,22 @@ blockquote {
 
 #back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 50px;
+    right: 50px;
     z-index: 9999;
-    width: 52px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-align: center;
-    line-height: 40px;
-    background: #8e0e0e;
+    line-height: 50px;
+    background: #25D366;
     color: #ffffff;
     cursor: pointer;
     border: 0;
-    border-radius: 2px;
+    border-radius: 20px;
     text-decoration: none;
     transition: opacity 0.2s ease-out;
-	font-size: 30px;
+    font-size: 45px;
+    box-shadow: 0px 5px 5px #aaaaaa
 }
 
 
