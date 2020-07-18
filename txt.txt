@@ -7,3 +7,30 @@ Add the roasted peanuts and sesame seeds to the sugar.
 Pour it on a parchment paper and let it cool completely
 
 ₹
+
+0<a class="add-cart"><i class="fa fa-minus-circle"></i></a>
+
+{
+        name: "chikki1",
+        tag: "ch1",
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: "chikki2",
+        tag: "ch2",
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: "chikki3",
+        tag: "ch3",
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: "jelly1",
+        tag: "j1",
+        price: 20,
+        inCart: 0
+    }

@@ -165,7 +165,8 @@ button:focus{
 	padding: 0px 0px;
 	position: fixed;
 	width: 100%;
-	border-radius: 0px 0px 100px 100px;
+    border-radius: 0px 0px 100px 100px;
+    opacity: 0.8;
 	transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
@@ -383,6 +384,11 @@ button:focus{
 /*------------------------------------------------------------------
     Menu
 -------------------------------------------------------------------*/
+.add-cart {
+    position: relative;
+    font-size: x-large;
+    left: 90px;
+}
 
 .menu-box{
 	padding: 70px 0px;
