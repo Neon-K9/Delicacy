@@ -54,6 +54,60 @@ let products = [
         tag: "fudgethree",
         price: 280,
         inCart: 0
+    },
+    {
+        name: "Chikki One",
+        tag: "chikkione",
+        price: 150,
+        inCart: 0
+    },
+    {
+        name: "Chikki Two",
+        tag: "chikkitwo",
+        price: 200,
+        inCart: 0
+    },
+    {
+        name: "Chikki Three",
+        tag: "chikkithree",
+        price: 250,
+        inCart: 0
+    },
+    {
+        name: "Jelly One",
+        tag: "jellyone",
+        price: 50,
+        inCart: 0
+    },
+    {
+        name: "Jelly Two",
+        tag: "jellytwo",
+        price: 75,
+        inCart: 0
+    },
+    {
+        name: "Jelly Three",
+        tag: "jellythree",
+        price: 45,
+        inCart: 0
+    },
+    {
+        name: "Fudge One",
+        tag: "fudgeone",
+        price: 240,
+        inCart: 0
+    },
+    {
+        name: "Fudge Two",
+        tag: "fudgetwo",
+        price: 200,
+        inCart: 0
+    },
+    {
+        name: "Fudge Three",
+        tag: "fudgethree",
+        price: 280,
+        inCart: 0
     }
 ];
 
