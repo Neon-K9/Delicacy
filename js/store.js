@@ -223,7 +223,7 @@ function displayCart() {
 
         productContainer.innerHTML += `
             <div class="checkOut">
-                <a>
+                <a href="order.html">
                     <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                 </a>
                 <h4 style="color: #8e0e0e;">Check Out</h4> 
