@@ -114,7 +114,7 @@
         firebase.initializeApp(firebaseConfig);
         var database = firebase.database();
         function writeData() {
-          database.ref("Order").set({
+          database.ref("Order/" + document.getElementById("name").value).set({
             name: document.getElementById("name").value,
             mail: document.getElementById("email").value,
             number: document.getElementById("num").value,
