@@ -18,8 +18,19 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .note {
+            font-family: 'Cinzel Decorative';
+            font-size: 22px;
+            color: #8e0e0e;
+            text-align: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            letter-spacing: 2px;
+        }
+    </style>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,101 +47,9 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        form {
-            padding-top: 3%;
-            padding-bottom: 3%;
-        }
-
-        .input-container {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .icon {
-            font-size: 25px;
-            padding: 10px;
-            background: #8e0e0e;
-            color: white;
-            min-width: 50px;
-            text-align: center;
-        }
-
-        .input-field {
-            width: 100%;
-            padding: 10px;
-            outline: none;
-        }
-
-        .input-field:focus {
-            border: 2px solid #8e0e0e;
-        }
-
-        /* Set a style for the submit button */
-        .btn {
-            background-color: #8e0e0e;
-            color: white;
-            padding: 15px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
-        }
-
-        .btn:hover {
-            opacity: 1;
-        }
-    </style>
-
 </head>
 
 <body>
-    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
-    <script>
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyASoFuzPIoJYD494T_CQTW3TnZiVLINjFA",
-            authDomain: "delicacy-eb682.firebaseapp.com",
-            databaseURL: "https://delicacy-eb682.firebaseio.com",
-            projectId: "delicacy-eb682",
-            storageBucket: "delicacy-eb682.appspot.com",
-            messagingSenderId: "746397483761",
-            appId: "1:746397483761:web:2aa2bbfa46e581f75a1f50",
-            measurementId: "G-13KM9XKQWD"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        var database = firebase.database();
-
-        let productNumbers = localStorage.getItem('cartNumbers');
-        productNumbers = parseInt(productNumbers);
-        let cartItems = localStorage.getItem('productsInCart');
-        cartItems = JSON.parse(cartItems);
-        
-
-        function writeData() {
-            database.ref("Order/" + document.getElementById("name").value).set({
-                name: document.getElementById("name").value,
-                mail: document.getElementById("email").value,
-                number: document.getElementById("num").value,
-                address: document.getElementById("add").value,
-                pincode: document.getElementById("pc").value,
-                cart: cartItems
-            });
-        }
-    </script>
     <!-- Start header -->
     <header class="top-navbar">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -153,35 +72,7 @@
         </nav>
     </header>
 
-    <form style="max-width:700px;margin:auto" action="thankyou.html">
-        <h2>Enter your Details to proceed</h2>
-        <div class="input-container">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Name" id="name">
-        </div>
-
-        <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Email" id="email">
-        </div>
-
-        <div class="input-container">
-            <i class="fa fa-phone icon"></i>
-            <input class="input-field" type="text" placeholder="Number" id="num">
-        </div>
-
-        <div class="input-container">
-            <i class="fa fa-location-arrow icon"></i>
-            <input class="input-field" type="text" placeholder="Address" id="add">
-        </div>
-
-        <div class="input-container">
-            <i class="fa fa-map-marker icon"></i>
-            <input class="input-field" type="text" placeholder="Pin-Code" id="pc">
-        </div>
-
-        <button type="submit" class="btn" onclick="writeData()">Proceed</button>
-    </form>
+    <p class="note" >THANK YOU FOR SHOPPING WITH US</p>
 
     <div class="contact-imfo-box" id="contact">
         <div class="container">
