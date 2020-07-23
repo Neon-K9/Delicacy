@@ -11,12 +11,18 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    const obj = document.getElementById('object');
+    let obj = document.querySelector('.object');
     const dbRef = firebase.database().ref().child('Order');
 
-    dbRef.on('value', snap => {
-        console.log(snap.val());
-        obj.innerText = JSON.stringify(snap.val(), null, 3);
+    dbRef.on('child_added', function(data, prevChildKey){
+        var newOrder = data.val();
+        obj.innerHTML +=
+        `<tr>
+            <td>${newOrder.name}</td>
+            <td>${newOrder.number}</td>
+            <td>₹${newOrder.amount}</td>
+            <td>${newOrder.city}</td>
+        </tr>
+        `
     });
-
 }());
