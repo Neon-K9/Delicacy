@@ -118,16 +118,20 @@
         productNumbers = parseInt(productNumbers);
         let cartItems = localStorage.getItem('productsInCart');
         cartItems = JSON.parse(cartItems);
+        let cart = localStorage.getItem("totalCost");
+
         
 
         function writeData() {
-            database.ref("Order/" + document.getElementById("name").value).set({
+            database.ref("Order/" + Math.floor(Math.random() * 10000 + 1 )).set({
                 name: document.getElementById("name").value,
                 mail: document.getElementById("email").value,
                 number: document.getElementById("num").value,
                 address: document.getElementById("add").value,
                 pincode: document.getElementById("pc").value,
-                cart: cartItems
+                city: document.getElementById("city").value,
+                cart: cartItems,
+                amount: cart
             });
         }
     </script>
@@ -173,6 +177,11 @@
         <div class="input-container">
             <i class="fa fa-location-arrow icon"></i>
             <input class="input-field" type="text" placeholder="Address" id="add">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-compass icon"></i>
+            <input class="input-field" type="text" placeholder="city" id="city">
         </div>
 
         <div class="input-container">
