@@ -119,6 +119,7 @@
         let cartItems = localStorage.getItem('productsInCart');
         cartItems = JSON.parse(cartItems);
         let cart = localStorage.getItem("totalCost");
+        var d = new Date();
         
         function writeData() {
             database.ref("Order/" + Math.floor(Math.random() * 10000 + 1)).set({
@@ -129,7 +130,8 @@
                 pincode: document.getElementById("pc").value,
                 city: document.getElementById("city").value,
                 cart: cartItems,
-                amount: cart
+                amount: cart,
+                timestamp: d
             });
 
             localStorage.setItem('totalCost', 0);
@@ -162,7 +164,7 @@
     </header>
 
     <form style="max-width:700px;margin:auto" action="thankyou.html">
-        <h2>Enter your Details to proceed<img src="images/deets.svg" style="height: 150px;width: 150px;margin-left: 37%;"></h2>
+        <h2>Enter your Details<img src="images/deets.svg" style="height: 150px;width: 150px;"></h2>
         <div class="input-container">
             <i class="fa fa-user icon"></i>
             <input class="input-field" type="text" placeholder="Name" id="name">
