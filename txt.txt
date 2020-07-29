@@ -34,3 +34,4 @@ Pour it on a parchment paper and let it cool completely
         price: 20,
         inCart: 0
     }
+    
