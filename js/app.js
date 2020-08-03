@@ -21,7 +21,6 @@
             <td>${newOrder.name}</td>
             <td>${newOrder.number}</td>
             <td>₹${newOrder.amount}</td>
-            <td>${newOrder.timestamp}</td>
             <td>${newOrder.city}</td>
         </tr>
         `
