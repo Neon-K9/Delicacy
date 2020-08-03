@@ -30,6 +30,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -102,10 +104,10 @@
         // Your web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyASoFuzPIoJYD494T_CQTW3TnZiVLINjFA",
-            authDomain: "delicasy-eb682.firebaseapp.com",
-            databaseURL: "https://delicasy-eb682.firebaseio.com",
-            projectId: "delicasy-eb682",
-            storageBucket: "delicasy-eb682.appspot.com",
+            authDomain: "delicacy-eb682.firebaseapp.com",
+            databaseURL: "https://delicacy-eb682.firebaseio.com",
+            projectId: "delicacy-eb682",
+            storageBucket: "delicacy-eb682.appspot.com",
             messagingSenderId: "746397483761",
             appId: "1:746397483761:web:2aa2bbfa46e581f75a1f50",
             measurementId: "G-13KM9XKQWD"
@@ -120,7 +122,7 @@
         cartItems = JSON.parse(cartItems);
         let cart = localStorage.getItem("totalCost");
         var d = new Date();
-        
+
         function writeData() {
             database.ref("Order/" + Math.floor(Math.random() * 10000 + 1)).set({
                 name: document.getElementById("name").value,
@@ -132,7 +134,6 @@
                 cart: cartItems,
                 amount: cart
             });
-
             localStorage.setItem('totalCost', 0);
             localStorage.setItem('productsInCart', JSON.stringify(null));
             localStorage.setItem('cartNumbers', 0);
@@ -145,8 +146,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <h1 class="logo">Delicasy</h1>
-					<h5 style="text-align: center;">Delivering to your Taste Buds</h5>
+                    <h1 class="logo">DELICASY</h1>
+                    <h5 style="text-align: center;">Delivering to your Taste Buds</h5>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food"
                     aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
