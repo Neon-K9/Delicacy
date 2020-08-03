@@ -49,7 +49,7 @@
 			} 
 		}); 
 		$('#back-to-top').click(function(){ 
-			window.location.href = "https://wa.me/918850453196/?text=hello%20Enquiring%20for%20Delicacy";
+			window.location.href = "https://wa.me/918850453196/?text=hello%20Enquiring%20for%20delicasy";
 			return false; 
 		}); 
 	});
