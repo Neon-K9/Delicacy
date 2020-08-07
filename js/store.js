@@ -16,9 +16,9 @@ let products = [
         inCart: 0
     },
     {
-        name: "Kesar Kaju",
-        tag: "kesarkaju",
-        price: 220,
+        name: "Badam",
+        tag: "badam",
+        price: 192,
         quantity: 200,
         inCart: 0
     },
@@ -44,8 +44,8 @@ let products = [
         inCart: 0
     },
     {
-        name: "Black",
-        tag: "black",
+        name: "Black Sesame",
+        tag: "blacksesame",
         price: 176,
         quantity: 400,
         inCart: 0
